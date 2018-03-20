@@ -33,6 +33,11 @@ public class Pizza {
 	/** Pizza.java : double */
 	@ToString(beginWith = " ( ", endWith = " € ) ")
 	private double prix;
+	
+	/**
+	 * pathImage : String
+	 */
+	private String pathImage;
 
 	/** Pizza.java : CategoriePizza */
 	@ToString(beginWith = " [ ", endWith = " ] ")
@@ -52,6 +57,21 @@ public class Pizza {
 		this.labelle = libelle;
 		this.prix = prix;
 		this.categorie = categorie;
+	}
+	
+	/** Constructor
+	 * @param code
+	 * @param libelle
+	 * @param prix
+	 * @param categorie
+	 * @param pathImage
+	 */
+	public Pizza(String code, String libelle, double prix, CategoriePizza categorie, String pathImage) {
+		this.code = code;
+		this.labelle = libelle;
+		this.prix = prix;
+		this.categorie = categorie;
+		this.pathImage = pathImage;
 	}
 
 	
@@ -198,6 +218,24 @@ public class Pizza {
 	 */
 	public void setId(int id) {
 		this.id = id;
+	}
+
+
+
+	/** Getter
+	 * @return the pathImage
+	 */
+	public String getPathImage() {
+		return pathImage;
+	}
+
+
+
+	/** Setter
+	 * @param pathImage the pathImage to set
+	 */
+	public void setPathImage(String pathImage) {
+		this.pathImage = pathImage;
 	}
 
 }

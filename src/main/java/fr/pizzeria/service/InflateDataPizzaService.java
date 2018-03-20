@@ -31,11 +31,13 @@ public class InflateDataPizzaService extends MenuPizzaService {
 		CategoriePizza viande = FactoryDao.getCategorieDao().findByLabel("Viande").get(0);
 		CategoriePizza poisson = FactoryDao.getCategorieDao().findByLabel("Poisson").get(0);
 		Pizza[] list = new Pizza[] { 
-				new Pizza("PEP", "Pépéroni", 12.50, viande),
-				new Pizza("MAR", "Margarita", 14.00, vegan), new Pizza("REI", "La Reine", 11.00, viande),
-				new Pizza("FRO", "La 4 formages", 12.00, vegan), new Pizza("CAN", "La cannibale", 12.50, vegan),
-				new Pizza("SAV", "La savoyarde", 13.00, poisson), new Pizza("ORI", "L''orientale", 13.50, viande),
-				new Pizza("IND", "L''indienne", 14.00, viande) };
+				new Pizza("FRO", "La 4 formages", 12.00, vegan, "4fromages.jpg"),
+				new Pizza("SAI", "4 Saisons", 12.50, vegan, "4saisons.jpg"),
+				new Pizza("BOL", "Bolognese", 12.50, viande, "bolognese.jpg"),
+				new Pizza("CHO", "Chorizo", 12.50, viande, "chorizo.jpg"),
+				new Pizza("NAP", "Napolitaine", 14.00, poisson, "napolitaine.jpg"), 
+				new Pizza("REI", "La Reine", 11.00, viande, "reine.jpg")
+				};
 
 		Stream.of(list).forEach(p -> FactoryDao.getPizzaDao().saveNew(p));
 		
