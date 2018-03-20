@@ -1,6 +1,9 @@
 package dev.pizzeria;
 
 import dev.pizzeria.controller.ClientController;
+import fr.pizzeria.exception.SaveException;
+import fr.pizzeria.service.InflateDataPizzaService;
+
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
@@ -12,6 +15,13 @@ public class PizzeriaApp {
 
     public static void main(String[] args) throws Exception {
 
+		InflateDataPizzaService service = new InflateDataPizzaService();
+		try {
+			service.executeUC();
+		} catch (SaveException e) {
+			e.printStackTrace();
+		}
+		
         Server server = new Server();
 
         ServerConnector connector = new ServerConnector(server);
