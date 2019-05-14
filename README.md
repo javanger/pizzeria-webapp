@@ -13,22 +13,53 @@ Tester l'URL : `http://localhost:8080/images/4fromages.jpg`.
 Tester l'URL : `http://localhost:8080/test.html`.
 
 
-
 # Fonctionnalités attendues :
 
-* Itération 1 : Ajouter un client. Nom de la branche `prenom-it-1-ajouter-client`.
+> Les données pourront être stockées dans des structures Java.
 
-* Itération 2 : Afficher la liste des clients. Nom de la branche `prenom-it-2-lister-client`.
+* Itération 1 : Intégrer la page d'accueil (URL `http://localhost:8080/`).
+    * Y ajouter des liens vers la gestion des clients, livreurs, commandes, ...
+    
+![](images/app-accueil.png)
 
-* Itération 3 : Ajouter une pizza. Nom de la branche `prenom-it-3-ajouter-pizza`.
+* Itération 2 : Ajouter un client.
 
-* Itération 4 : Afficher la liste des pizzas. Nom de la branche `prenom-it-4-lister-pizzas`.
+![](images/app-client-create.png)
 
-* Itération 5 : Ajouter un livreur. Nom de la branche `prenom-it-5-ajouter-livreur`.
+> En cas de succès, rediriger vers la liste des clients.
 
-* Itération 6 : Afficher la liste des livreurs. Nom de la branche `prenom-it-6-lister-livreurs`.
+> En cas d'échec, réafficher le formulaire avec un message d'erreur (tous les champs sont obligatoires).
 
-* Itération 7 : Ajouter une commande. Nom de la branche `prenom-it-7-ajouter-commande`.
+* Itération 3 : Afficher la liste des clients.
 
-* Itération 8 :Afficher la liste des commandes. Nom de la branche `prenom-it-8-lister-commandes`.
+![](images/app-client-lister.png)
 
+* Itération 4 : Ajouter une pizza.
+
+![](images/app-pizza-create.png)
+
+> En cas de succès, rediriger vers la liste des pizzas.
+
+> En cas d'échec, réafficher le formulaire avec un message d'erreur (tous les champs sont obligatoires).
+
+* Itération 5 : Afficher la liste des pizzas.
+
+![](images/app-pizza-lister.png)
+
+* Itération 6 : Ajouter un livreur.
+    * Le livreur a les informations suivantes : `nom`, `prenom`.
+
+> En cas de succès, rediriger vers la liste des clients.
+
+> En cas d'échec, réafficher le formulaire avec un message d'erreur (tous les champs sont obligatoires).
+
+
+* Itération 7 : Afficher la liste des livreurs.
+
+* Itération 8 : Ajouter une commande.
+
+![](images/app-commande-create.png)
+
+* Itération 9 :Afficher la liste des commandes.
+
+![](images/app-commande-lister.png)
