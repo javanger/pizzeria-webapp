@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Création pizza</title>
+	</head>
+	<body>
+		<header>
+			<h1>Ici prochainement formulaire pour ajouter une pizza (WIP)</h1>
+		</header>
+		<h2>Menu</h2>
+		<nav>
+			<ul>
+				<li><a href="Accueil.html">Retourner à l'accueil</a>
+				<li><a href="GestionPizza.html">Retourner à la gestion des pizzas</a>
+			</ul>
+		</nav>
+		<section>
+			<form method="POST" action="/pizzas">
+				<p>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									Code
+								</td>
+								<td>
+									<input type="text" name="code"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Libellé
+								</td>
+								<td>
+									<input type="text" name="libelle"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Catégorie
+								</td>
+								<td>
+									<select name="categorie">
+										<option>VIANDE</option>
+										<option>POISSON</option>
+										<option>SANS_VIANDE</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Prix
+								</td>
+								<td>
+									<input type="text" name="prix"/>
+								</td>
+							</tr>
+							
+							<tr>
+								<td colspan="2">
+									<input type="submit" value="Valider"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+			</form>
+		</section>
+		
+		
+	</body>
+</html>
