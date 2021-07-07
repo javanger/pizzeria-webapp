@@ -1,6 +1,11 @@
 package dev.pizzeria;
 
 import dev.pizzeria.controller.ClientController;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
@@ -11,7 +16,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 public class PizzeriaApp {
 
     public static void main(String[] args) throws Exception {
-
+		
         Server server = new Server();
 
         ServerConnector connector = new ServerConnector(server);

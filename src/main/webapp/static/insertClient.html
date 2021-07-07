@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nouveau Client</title>
+    <style>
+          table{
+            width : 30%;
+          }
+          td{
+           	width : 50%;
+          }
+      </style>
+</head>
+
+<body>
+    <header>
+		<h1>Gestion des clients</h1>
+    </header>
+    <section>
+      <article>
+       	<h2>Création d'un client</h2>
+       	<form action="/clients" method="post">
+	       	<table>
+	       		<tr>
+	       			<td><label>Nom</label></td>
+	       			<td><input name="Nom" type="text"/></td>
+	       		</tr>
+	       		<tr>
+	       			<td><label>Prénom</label></td>
+	       			<td><input name="Prenom" type="text" /></td>
+	       		</tr>
+	       		<tr>
+	       			<td><label>Ville</label></td>
+	       			<td><input name="Ville" type="text" /></td>
+	       		</tr>
+	       		<tr>
+	       			<td><label>Age</label></td>
+	       			<td><input name="Age" type="text" /></td>
+	       		</tr>
+	       		<tr>
+	       			<td></td>
+	       			<td><input type="submit" value="Ajouter"></td>
+	       		</tr>
+	       	</table>
+       	</form>
+      </article>
+    </section>
+</body>
+</html>
